@@ -1,0 +1,79 @@
+from selenium.webdriver.common.by import By
+
+
+# Definição da classe da página, dos localizadores e do método na classe
+class UrbanRoutesPage:
+    # Localizadores como atributos de classe
+    FROM_LOCATOR = (By.ID, 'from')
+    TO_LOCATOR = ...
+    PERSONAL_OPTION_LOCATOR = (By.XPATH, '//div[text()="Personal"]')
+    CARSHARING_ICON_LOCATOR = (By.XPATH, '(//img[@src="/static/media/car.8a2b1ff5.svg"])[2]')
+    BOOK_BUTTON_LOCATOR = ...
+    CAMPING_LOCATOR = ...
+    ADD_DRIVER_LICENSE_LOCATOR = ...
+    FIRST_NAME_LOCATOR = ...
+    LAST_NAME_LOCATOR = ...
+    DATE_OF_BIRTH_LOCATOR = ...
+    NUMBER_LOCATOR = ...
+    ADD_BUTTON_LOCATOR = ...
+    ADD_A_DRIVER_LICENCE_TITLE_LOCATOR = (By.XPATH, '//div[contains(text(),"Adicionar carteira de motorista")]')
+    VERIFICATION_TEXT_LOCATOR = ...
+
+    def __init__(self, driver):
+        self.driver = driver  # Inicializar o driver
+
+    def enter_from_location(self, from_text):
+        # Inserir De
+        ...
+
+    def enter_to_location(self, to_text):
+        # Inserir Para
+        ...
+
+    def click_personal_option(self):
+        # Clicar Personal
+        ...
+
+    def click_carsharing_icon(self):
+        # Clique no ícone Carsharing
+        ...
+
+    def click_book_button(self):
+        # Clique no botão Reservar
+        ...
+
+    def click_camping(self):
+        # Clique em Camping
+        ...
+
+    def click_add_driver_license(self):
+        # Clicar em Adicionar carteira de motorista
+        ...
+
+    def enter_first_name(self, first_name):
+        # Digitar Nome
+        ...
+
+    def enter_last_name(self, last_name):
+        # Digitar Sobrenome
+        ...
+
+    def enter_date_of_birth(self, date_of_birth):
+        # Inserir Data de nascimento
+        ...
+
+    def enter_number(self, number):
+        # Digitar Número
+        ...
+
+    def click_title(self):
+        # Clicar Adicionar um título de carteira de motorista
+        ...
+
+    def click_add_button(self):
+        # Clicar no botão Adicionar
+        ...
+
+    def get_verification_text(self):
+        # Retornar o texto de verificação
+        ...
